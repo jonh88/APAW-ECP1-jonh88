@@ -42,4 +42,9 @@ public class IndirectIssueComposite extends IndirectIssueComponent {
 		return this.numChildren;
 	}
 
+	@Override
+	public boolean isComposed() {		
+		return true;
+	}
+
 }
