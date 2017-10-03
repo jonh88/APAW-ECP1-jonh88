@@ -8,11 +8,9 @@ branches:
 notifications:
   email:
     recipients:
-    - architect@gmail.com
-services:
-- mysql
-before_install:
-- mysql -e 'CREATE DATABASE IF NOT EXISTS bd;'
+    - jonathan.lozano.sanchez@gmail.com
 script:
 #Test unitario y de integracion en develop
-- mvn verify --settings settings.xml
+- mvn clean verify --settings settings.xml
+- mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify --settings settings.xml
+- mvn sonar:sonar -Dsonar.organization=jonh88-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR --settings settings.xml
