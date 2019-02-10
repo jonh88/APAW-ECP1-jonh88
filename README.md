@@ -1,3 +1,5 @@
-# Patrones de diseño
+# Design Patterns in Java
 
-Explicación del patrón de diseño strategy en la [wiki](./../../wiki/)
+Implementation of some design patters in Java
+
+Strategy design pattern in depth (Spanish) [wiki](./../../wiki/)
